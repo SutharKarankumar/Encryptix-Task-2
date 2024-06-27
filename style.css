@@ -1,0 +1,589 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(212, 146, 212);
+    background-position: center center;
+    color: purple;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: purple;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    /* width: 15%; */
+    margin: 10px 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav .logo:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 32px;
+    color: rgb(174, 2, 174);
+    transition: all 0.5s ease-out;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 10px;
+}
+
+.navbar ul li {
+    padding: 10px;
+}
+
+.navbar ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    color: purple;
+    transition: all 0.5s ease-out;
+}
+
+/* main {
+    color: purple;
+} */
+
+section.home {
+    width: 100%;
+    margin: auto;
+    height: calc(100vh + 100px);
+}
+
+.home .home-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.home-content :nth-child(1) {
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-content :nth-child(2) {
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-content :nth-child(3) {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.saperation {
+    width: 100%;
+    margin: auto;
+    height: 7px;
+    background-color: purple;
+}
+
+.about {
+    width: 80%;
+    margin: 55px auto;
+}
+
+.about h2 {
+    text-align: center;
+    color: purple;
+    font-weight: bolder;
+    font-size: 28px;
+    padding: 23px;
+    margin: 23px;
+}
+
+.about .about-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about .about-content .about-mycontent {
+    width: 45%;
+}
+
+.about .about-content .about-mycontent .my-self {
+    padding: 25px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.about-mycontent .about-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-mycontent .about-info .info :nth-child(1) {
+    padding: 12px 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about-mycontent .about-info .info :nth-child(2) {
+    font-weight: bold;
+}
+
+.about .about-content .about-my-image {
+    width: 45%;
+    text-align: center;
+    /* border: 2px solid purple; */
+}
+
+.about .about-content .about-my-image img {
+    width: 70%;
+}
+
+.skills {
+    width: 80%;
+    margin: 45px auto;
+}
+
+.skills h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 28px;
+    padding: 23px;
+    margin: 23px;
+}
+
+.my-progress-bar {
+    border: 1px solid purple;
+}
+
+.my-progress-bar .card-body {
+    padding: 10px;
+}
+
+.my-progress-bar .card-body h4 {
+    padding: 10px;
+}
+
+.card-body .progress .progress-bar {
+    width: 80%;
+    height: 5px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card-body .progress .progress-line-one {
+    width: 90%;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.card-body .progress .progress-line-two {
+    width: 88%;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.card-body .progress .progress-line-three {
+    width: 80%;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.card-body .progress .progress-line-forth {
+    width: 95%;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.card-body .progress .progress-line-fifth {
+    width: 92%;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.skills .sub-skills {
+    width: 90%;
+    margin: 50px auto;
+    border: 1px solid purple;
+    /* object-fit: cover; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-skills .sub-skills-content ul {
+    list-style-position: inside;
+}
+
+.sub-skills .sub-skills-content ul li {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.projects {
+    width: 100%;
+    margin: 55px auto;
+}
+
+.projects h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 28px;
+    padding: 23px;
+    margin: 23px;
+}
+
+.projects .project-content {
+    width: 90%;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.project-content .my-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-content .my-projects p {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.project-content .my-projects p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.project-content .my-projects img {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+}
+
+.project-content .my-projects img:hover {
+    opacity: 0.9;
+    width: 95%;
+    transition: all 0.4s ease-in-out;
+}
+
+.resume {
+    width: 100%;
+    margin: 55px auto;
+}
+
+.resume>h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 28px;
+    padding: 23px;
+    margin: 23px;
+}
+
+.resume .resume-content {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* .resume-content .who-am-i{
+    border: 1px solid purple;
+} */
+
+.resume-content .who-am-i h2 {
+    padding: 12px 0px;
+}
+
+.resume-content .who-am-i p {
+    font-size: 18px;
+    word-wrap: wrap;
+}
+
+.resume-content .who-am-i .resume-btn {
+    margin: 15px 0px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+.resume-content .who-am-i .resume-btn:hover {
+    background-color: rgb(162, 2, 162);
+    cursor: pointer;
+}
+
+/* .resume-content .personal-info{
+    border: 1px solid purple;
+} */
+
+.resume-content .personal-info h2 {
+    padding: 12px 0px;
+}
+
+.resume-content .personal-info ul {
+    list-style-type: none;
+}
+
+.resume-content .personal-info ul li span {
+    font-weight: bold;
+}
+
+.resume-content .personal-info ul li {
+    padding: 5px 0px;
+    font-size: 18px;
+    word-wrap: wrap;
+}
+
+/* .resume-content .education{
+    border: 1px solid purple;
+} */
+
+.resume-content .education h2 {
+    padding: 12px 0px;
+}
+
+.resume-content .education .education-content {
+    margin: 18px 0px;
+}
+
+.resume-content .education .education-content p {
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+/* .resume-content .languages{
+    border: 1px solid purple;
+} */
+
+.resume-content .languages h2 {
+    padding: 12px 0px;
+}
+
+.resume-content .languages p {
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+.contact {
+    width: 80%;
+    margin: 55px auto;
+}
+
+.contact>h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 28px;
+    padding: 23px;
+    margin: 23px;
+}
+
+.contact .contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 23px;
+}
+
+.contact .contact-content .contact-msg {
+    width: 58%;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.contact .contact-content .contact-msg input {
+    padding: 8px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    background: none;
+}
+
+.contact .contact-content .contact-msg textarea {
+    height: 100px;
+    padding: 8px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    background: none;
+}
+
+.contact-info {
+    width: 38%;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+}
+
+.contact-info ul li {
+    padding: 8px 0px;
+    font-size: 18px;
+}
+
+.contact-info ul li span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    width: 100%;
+    margin: 100px auto;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width:600px) {
+    .home-content {
+        width: 100%;
+        margin: auto;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .home-content :nth-child(1) {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .home-content :nth-child(2) {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .home-content :nth-child(3) {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .about h2{
+        font-size: 23px;
+        margin: 10px;
+    }
+    .skills h2{
+        font-size: 23px;
+        margin: 10px;
+    }
+    .projects h2{
+        font-size: 23px;
+        margin: 10px;
+    }
+    .resume h2{
+        font-size: 23px;
+        margin: 10px;
+    }
+    .contact h2{
+        font-size: 23px;
+        margin: 10px;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+    }
+
+    .about .about-content .about-mycontent {
+        width: 95%;
+        margin: auto;
+    }
+
+    .about .about-content .about-mycontent .my-self {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .about-mycontent .about-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-content .about-my-image {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .about .about-content .about-my-image img {
+        width: 120%;
+    }
+
+    .skills .sub-skills {
+        flex-direction: column;
+    }
+
+    .projects .project-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .resume .resume-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .contact-content {
+        flex-direction: column;
+    }
+
+    .contact .contact-content .contact-msg {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact .contact-content .contact-info {
+        width: 80%;
+        margin: 23px auto;
+    }
+}
